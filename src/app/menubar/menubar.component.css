@@ -1,0 +1,20 @@
+.navbar-default {
+    background-color: #5FA8AD;
+    color: white;
+}
+.navbar-brand{
+    color: #285659;
+    font-weight: bold;
+    font-family: Forte;
+    font-size: 24px;
+}
+.nav a{
+    color: #285659;
+    font-size:14px;
+}
+
+.nav a:hover{
+    color: white;
+}
+
+

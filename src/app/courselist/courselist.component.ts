@@ -9,6 +9,7 @@ import {CourseService} from '../course.service';
 })
 export class CourselistComponent implements OnInit {
  clist:course[];
+ interested:Set<string>=new Set<string>();
   constructor(private cs:CourseService) {
      this.clist=cs.getCourses();
    }
@@ -16,4 +17,8 @@ export class CourselistComponent implements OnInit {
   ngOnInit() {
   }
 
+  receiveData(data):void{
+    this.interested.add(data);
+    console.log(this.interested);
+ }
 }

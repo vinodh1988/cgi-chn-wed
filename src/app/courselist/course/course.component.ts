@@ -1,4 +1,5 @@
-import { Component, OnInit,Input } from '@angular/core';
+import { Component, OnInit,Input,EventEmitter,Output } 
+from '@angular/core';
 import {course} from '../../course';
 @Component({
   selector: 'course',
@@ -8,9 +9,15 @@ import {course} from '../../course';
 export class CourseComponent implements OnInit {
    
  @Input('data')  current:course;
+ @Output('send') sendData:EventEmitter<string>=
+ new EventEmitter<string>();
   constructor() { }
 
   ngOnInit() {
+  }
+
+  buyCourse(){
+    this.sendData.emit(this.current.title);
   }
 
 }

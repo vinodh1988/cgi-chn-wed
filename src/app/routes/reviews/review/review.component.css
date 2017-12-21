@@ -1,0 +1,27 @@
+.reviewbox{
+    margin:20px;
+    padding: 10px;
+    background-color: #BADDDF;
+}
+
+.rname{
+    color: #4B7376;
+    font-family: Agency FB;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.message{
+    color: #194E52;
+    padding: 5px;
+    margin: 10px;
+    font-family: arial;
+    font-size: 12px;
+};
+
+.rtime{
+    color: darkslategrey;
+    font-family: Courier;
+    font-size: 16px;
+    text-align: right;
+}

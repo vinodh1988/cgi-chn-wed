@@ -1,0 +1,42 @@
+<div class="form-box">
+    <h1> Post your review</h1>
+    <form  (submit)="saveReview()">
+ <table>
+ 
+   <tr>
+   <th><label for="name" >Name</label></th>
+   <td><input  id="name" /></td>
+   <td></td>
+   </tr>
+ 
+     <tr>
+   <th><label for="email" >Email</label></th>
+   <td><input  id="email" /></td>
+   <td></td>
+   </tr>
+ 
+   <tr>
+   <th><label for="course" >Course</label></th>
+   <td><select id="course">
+        <option>Java</option>
+        <option>Javascript</option><option>CSS3</option>
+         <option>HTML5</option>       
+     </select></td>
+   <td></td>
+   </tr>
+ 
+ <tr>
+  <th> <label for="message">Message</label></th>
+   <td><textarea  id="message"></textarea></td>
+   <td>
+   </td></tr>
+ 
+   <tr><td colspan="3" align="center">
+   <button type="submit"  class="btn
+   btn-info">Post Review</button>
+   </td></tr>
+ 
+ 
+ </table>
+   </form>
+ </div>

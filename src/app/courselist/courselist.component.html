@@ -1,6 +1,17 @@
+<div class="dropdown">
+    <button class="btn btn-primary dropdown-toggle" 
+    type="button" data-toggle="dropdown">
+    You showed interest in
+    <span class="caret"></span></button>
+    <ul class="dropdown-menu">
+      <li *ngFor="let temp of interested">
+          <a href="#">{{temp}}</a>
+        </li>
+    </ul>
+  </div>
 <div class="row">
     <div class="col-md-3" *ngFor="let n of clist">
-       <course [data]="n"></course>
+       <course [data]="n"  (send)="receiveData($event)"></course>
     </div>
 
 </div>
